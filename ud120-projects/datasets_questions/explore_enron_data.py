@@ -28,7 +28,7 @@ enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r")
 # print(enron_data["LAY KENNETH L"]["total_payments"])
 # print(enron_data["FASTOW ANDREW S"]["total_payments"])
 
-# print(len(enron_data))
+print(enron_data["SKILLING JEFFREY K"])
 
 nan_count =0;
 total_count = 0;
