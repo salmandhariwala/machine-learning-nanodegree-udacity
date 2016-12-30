@@ -156,12 +156,11 @@ class LearningAgent(Agent):
         #   Use only the learning rate 'alpha' (do not use the discount factor 'gamma')
 
         # create next state
-        # next_state = self.build_state()
-        # self.createQ(next_state)
+        next_state = self.build_state()
+        self.createQ(next_state)
 
         if (self.learning):
-            # self.Q[state][action] = (1-self.alpha) * self.Q[state][action] + (self.alpha) * ( reward  + self.get_maxQ(next_state))
-            self.Q[state][action] = (1-self.alpha) * self.Q[state][action] + (self.alpha) * ( reward  + self.get_maxQ(state))
+            self.Q[state][action] = (1-self.alpha) * self.Q[state][action] + (self.alpha) * ( reward  + self.get_maxQ(next_state))
 
         return
 
