@@ -1,3 +1,3 @@
 # machine learning nanodegree by Udacity
 
-contains course materials & assignment of the course
+contains course materials & assignments of the course
